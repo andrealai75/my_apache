@@ -7,7 +7,7 @@
 - debug:
     var: whoami_output.stdout_lines
 
-# - name: Ensure Apache is installed on RHEL.
-#   package:
-#     name: "httpd"
-#     state: "present"
+- name: Ensure Apache is installed on RHEL.
+  package:
+    name: "httpd"
+    state: "present"
