@@ -24,5 +24,9 @@ jobs:
         run: python3 -m pip install --user ansible
 
       - name: Create Playbook
-        run: ls
+        run: |
+          mkdir -p ./playbook/roles
+          mv !(playbook) ./playbook/roles
+          ls
+
 
