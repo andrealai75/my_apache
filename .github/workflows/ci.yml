@@ -22,3 +22,7 @@ jobs:
 
       - name: Installing Ansible
         run: python3 -m pip install --user ansible
+
+      - name: Create Playbook
+        run: ls
+
