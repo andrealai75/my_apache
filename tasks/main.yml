@@ -1,5 +1,9 @@
 ---
-- name: Ensure Apache is installed on RHEL.
-  package:
-    name: "httpd"
-    state: "present"
+
+- name: Check the user executing the Playbook
+  ansible.builtin.command: whoami
+
+# - name: Ensure Apache is installed on RHEL.
+#   package:
+#     name: "httpd"
+#     state: "present"
