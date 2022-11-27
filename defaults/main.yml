@@ -1,2 +1,5 @@
 ---
-# defaults file for my_apache
+- name: Ensure Apache is installed on RHEL.
+  package:
+    name: "httpd"
+    state: "present"
