@@ -16,3 +16,6 @@ jobs:
 
       - name: Checking if Python is installed
         run: python3 --version
+
+      - name: Checking if PIP is installed
+        run: python3 -m pip --version
