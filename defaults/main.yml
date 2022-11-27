@@ -1,5 +1,1 @@
----
-- name: Ensure Apache is installed on RHEL.
-  package:
-    name: "httpd"
-    state: "present"
+
