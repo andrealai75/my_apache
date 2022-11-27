@@ -33,4 +33,4 @@ jobs:
           cp ./roles/my_apache/tests/* .
 
       - name: Run Test Playbook
-        run: cd ../playbook && ansible-playbook test.yml
+        run: cd ../playbook && sudo ansible-playbook test.yml
