@@ -8,6 +8,9 @@
     var: whoami_output.stdout_lines
 
 - name: Ensure Apache is installed on RHEL.
-  package:
-    name: "httpd"
-    state: "present"
+  ansible.builtin.command: sudo apt update && sudo apt install apache2
+
+# - name: Ensure Apache is installed on RHEL.
+#   package:
+#     name: "httpd"
+#     state: "present"
