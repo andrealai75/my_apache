@@ -5,7 +5,7 @@
   register: whoami_output
 
 - debug:
-  var: whoami_output.stdout_lines
+    var: whoami_output.stdout_lines
 
 # - name: Ensure Apache is installed on RHEL.
 #   package:
