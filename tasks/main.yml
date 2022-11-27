@@ -2,6 +2,10 @@
 
 - name: Check the user executing the Playbook
   ansible.builtin.command: whoami
+  register: whoami_output
+
+- debug:
+  var: whoami_output.stdout_lines
 
 # - name: Ensure Apache is installed on RHEL.
 #   package:
