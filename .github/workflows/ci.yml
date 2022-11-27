@@ -30,4 +30,5 @@ jobs:
           cd playbook
           mkdir roles
           cp -r ../my_apache ./roles/
+          cp ./roles/tests/* .
           ls
