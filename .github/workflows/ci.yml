@@ -31,4 +31,6 @@ jobs:
           mkdir roles
           cp -r ../my_apache ./roles/
           cp ./roles/my_apache/tests/* .
-          ls
+
+      - name: Run Playbook
+        run: ansible-playbook test.yml
