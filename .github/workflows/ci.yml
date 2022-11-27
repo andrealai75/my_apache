@@ -29,5 +29,5 @@ jobs:
           mkdir -p playbook
           cd playbook
           mkdir roles
-          mv ../my_apache .
+          cp ../my_apache ./roles/
           ls
