@@ -19,3 +19,6 @@ jobs:
 
       - name: Checking if PIP is installed
         run: python3 -m pip --version
+
+      - name: Installing Ansible
+        run: python3 -m pip install --user ansible
