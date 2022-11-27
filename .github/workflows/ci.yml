@@ -26,5 +26,5 @@ jobs:
       - name: Create Playbook
         run: |
           mkdir -p ../playbook/roles
-          mv -r ../my_apache ../playbook/roles/
+          mv ../my_apache ../playbook/roles/
           ls ../playbook
