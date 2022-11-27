@@ -8,7 +8,7 @@
     var: whoami_output.stdout_lines
 
 - name: Ensure Apache is installed on RHEL.
-  ansible.builtin.command: sudo apt update && sudo apt install apache2
+  ansible.builtin.command: sudo apt install apache2
 
 # - name: Ensure Apache is installed on RHEL.
 #   package:
