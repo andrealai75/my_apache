@@ -23,7 +23,7 @@ jobs:
       - name: Installing Ansible
         run: python3 -m pip install --user ansible
 
-      - name: Create Playbook
+      - name: Create Test Playbook
         run: |
           cd ..
           mkdir -p playbook
@@ -32,5 +32,5 @@ jobs:
           cp -r ../my_apache ./roles/
           cp ./roles/my_apache/tests/* .
 
-      - name: Run Playbook
+      - name: Run Test Playbook
         run: cd ../playbook && ansible-playbook test.yml
