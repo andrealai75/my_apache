@@ -39,4 +39,4 @@ jobs:
         run: python3 -m pip install --user pytest
 
       - name: Run Test
-        run: cd ../playbook && pytest
+        run: cd ../playbook/roles/my_apache/tests && pytest
