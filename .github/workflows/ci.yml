@@ -34,3 +34,9 @@ jobs:
 
       - name: Run Test Playbook
         run: cd ../playbook && ansible-playbook test.yml -k
+
+      - name: Installing pytest
+        run: python3 -m pip install --user pytest
+
+      # - name: Run Test Playbook
+      #   run: cd ../playbook/tests && pytest
