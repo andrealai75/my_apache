@@ -38,5 +38,5 @@ jobs:
       - name: Installing pytest
         run: python3 -m pip install --user pytest
 
-      # - name: Run Test Playbook
-      #   run: cd ../playbook/tests && pytest
+      - name: Run Test
+        run: cd ../playbook/tests && pytest
