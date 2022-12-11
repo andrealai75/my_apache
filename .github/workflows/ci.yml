@@ -30,8 +30,8 @@ jobs:
           mkdir -p playbook
           cd playbook
           mkdir roles
-          cp -r ../my_apache ./roles/
-          cp ./roles/my_apache/tests/* .
+          cp -r ../my_apache_role ./roles/
+          cp ./roles/my_apache_role/tests/* .
 
       - name: Run Test Playbook
         run: cd ../playbook && ansible-playbook test.yml -k
@@ -40,4 +40,4 @@ jobs:
         run: python3 -m pip install --user pytest
 
       - name: Run Test
-        run: cd ../playbook/roles/my_apache/tests && pytest
+        run: cd ../playbook/roles/my_apache_role/tests && pytest
